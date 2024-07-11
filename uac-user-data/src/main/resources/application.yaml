@@ -1,0 +1,48 @@
+#-----------------------------------
+--- # Application
+#-----------------------------------
+
+server:
+  port: 8091
+
+#-----------------------------------
+--- # Authentication
+#-----------------------------------
+
+application:
+  security:
+    uuid: b592691e-df3f-4049-86d5-50bdce269354
+    strength: 8
+    system-username: SYSTEM
+    system-password: $2a$16$Pjg5ZRu.I2TsN5W38PMyQuYBorSrwmRKa/4fc01nEZl0FSOQeou3C # SYSADM
+
+#-----------------------------------
+--- # i18n & L10n
+#-----------------------------------
+
+spring:
+  messages:
+    encoding: UTF-8
+    basename: i18n/messages
+
+#-----------------------------------
+--- # Logging
+#-----------------------------------
+
+logging:
+  level:
+    com:
+      tujuhsembilan: TRACE
+
+#-----------------------------------
+--- # Miscellanous
+#-----------------------------------
+
+spring:
+  output:
+    ansi:
+      enabled: always # Just console color, I'm lovin' it!
+
+# # -----------------------------------
+# --- #
+# # -----------------------------------
